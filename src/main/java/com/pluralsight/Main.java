@@ -53,10 +53,17 @@ public class Main {
             //divide our sum by the amount of people in our list to find the average.
             int average = sum/people.size();
 
+
+
+            //Display the Oldest person
+            List<Integer> ageListSorted = people.stream().map(person -> person.getAge()).sorted().toList();
+
+            int youngestPerson = ageListSorted.getClass();
+
+
+
+
             System.out.println("The average age is " + average);
-
-
-
             System.out.println(matchingNames);
 
 
